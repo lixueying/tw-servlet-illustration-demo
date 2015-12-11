@@ -1,0 +1,9 @@
+## Intellij generated file 
+.idea
+*.iml
+*.ipr
+*.iws
+
+## Production and output directory
+out
+build
