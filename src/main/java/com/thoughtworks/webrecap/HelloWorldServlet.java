@@ -10,11 +10,9 @@ import java.io.PrintWriter;
 public class HelloWorldServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String userName = request.getParameter("sayMyName");
-
         PrintWriter out = response.getWriter();
 
-        out.println("<h1>" + "Hello " + userName + "!" + "</h1>");
+        out.println("<h1>" + "Hello world!" + "</h1>");
     }
 
     @Override
