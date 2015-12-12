@@ -6,11 +6,11 @@
     <display-name>Web Recap</display-name>
 
     <servlet>
-        <servlet-name>Say Hello</servlet-name>
+        <servlet-name>HelloWorldServlet</servlet-name>
         <servlet-class>com.thoughtworks.webrecap.HelloWorldServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Say Hello</servlet-name>
+        <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 
