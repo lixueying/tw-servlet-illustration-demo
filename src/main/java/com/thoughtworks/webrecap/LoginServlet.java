@@ -17,7 +17,9 @@ public class LoginServlet extends HttpServlet {
 
         PrintWriter out = response.getWriter();
 
-        if (userName != null && userName.equals("Congyu")) {
+        if (userName == null) {
+            out.println("<h1>Please specify a register username after the userName query parameter after url.</h1>");
+        } else if (userName.equals("Congyu")) {
             out.println("<h1>" + "Hello " + userName + "!" + "</h1>");
         } else {
             out.println("<h1> Sorry, you can not register not under Congyu's name.</h1>");
