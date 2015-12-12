@@ -13,12 +13,12 @@ public class LoginServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String userName = request.getParameter("userName");
+        String userName = request.getParameter("username");
 
         PrintWriter out = response.getWriter();
 
         if (userName == null) {
-            out.println("<h1>Please specify a register username after the userName query parameter after url.</h1>");
+            out.println("<h1>Please specify a register username after the username query parameter after url.</h1>");
         } else if (userName.equals("Congyu")) {
             out.println("<h1>" + "Hello " + userName + "!" + "</h1>");
         } else {
